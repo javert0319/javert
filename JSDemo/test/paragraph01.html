@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>paragraph01</title>
+</head>
+<body>
+<h1>只是我的第一段JavaScript</h1>
+<p id="demo">
+    通过点击可以改变文本内容
+</p>
+<script>
+    function myFunction() {
+        var x = document.getElementById("demo");//找到元素
+        x.innerHTML = "Hello JavaScript !";//改变内容
+    }
+</script>
+<button type="button" onclick="myFunction()">Touch Me</button>
+</body>
+</html>

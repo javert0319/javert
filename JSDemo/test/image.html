@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image</title>
+</head>
+<body>
+<h1>点击改变图片</h1>
+<p>
+    通过点击下面按钮改变图片
+</p>
+<script>
+    function changeImage() {
+        var element = document.getElementById("image");
+        if(element.src.match("13")){
+            element.src = "../img/j12.jpg";
+        }else {
+            element.src = "../img/j13.jpg";
+        }
+    }
+</script>
+<img id="image" src="../img/j12.jpg" onclick="changeImage()" width="480" height="320"/>
+
+</body>
+</html>
